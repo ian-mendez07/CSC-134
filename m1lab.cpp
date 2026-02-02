@@ -16,10 +16,15 @@ int main() {
     double pricePerApple = 0.25;
 
     // calculate the total price of the apples
-    // TODO
+    double totalPrice = apples * pricePerApple;
 
     // print all the information about the orchard
-    // TODO
     cout << "Welcome to " << name;
     cout << "'s apple orchard." << endl;
+    cout << "We have " << apples;
+    cout << " apples in stock" << endl;
+    cout << "Apples are currently $";
+    cout << pricePerApple << " each." << endl;
+    cout << "Total price of all apples is $" << totalPrice << endl;
+
 }
