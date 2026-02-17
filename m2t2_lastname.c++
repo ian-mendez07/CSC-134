@@ -43,6 +43,6 @@ int main() {
     cout << num_meals << " x " << meal_name << "\t$" << meal_price << endl;
     cout << "Subtotal: \t\t$" << sub_total << endl;
     cout << "Tip: \t\t$" << tip_amount << endl;
-    cout << "Tax: \t\t$" << tax_amount_amount << endl;
+    cout << "Tax: \t\t$" << tax_amount << endl;
     return 0; // no errors
 }
