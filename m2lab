@@ -1,0 +1,30 @@
+// CSC 134
+// M2LAB
+// Jeovannie Mendez
+// 03/02/2026
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    //Formatting set all prices to 2 decimals places
+    cout << setprecision(2) << fixed;
+
+    double COST_PER_CUBIC_FOOT = 0.23;
+    double CHARGE_PER_CUBIC_FOOT = 0.5;
+    double length, width, height, volume, cost, charge, profit;
+    cout << "What is the length of the crate: ";
+    cin >> length;
+    cout << "What is the width of the create: ";
+    cin >> width;
+    cout << "What is the height of the create: ";
+    cin >> height;
+
+    volume = length * width * height;
+    CHARGE_PER_CUBIC_FOOT = CHARGE_PER_CUBIC_FOOT * volume;
+    COST_PER_CUBIC_FOOT = COST_PER_CUBIC_FOOT * volume; 
+
+
+}
