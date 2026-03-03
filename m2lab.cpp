@@ -15,6 +15,8 @@ int main()
     double COST_PER_CUBIC_FOOT = 0.23;
     double CHARGE_PER_CUBIC_FOOT = 0.5;
     double length, width, height, volume, cost, charge, profit;
+    //ask the measurements of crate
+    cout << "Enter the dimensions of the crate in feet."<< endl;
     cout << "What is the length of the crate: ";
     cin >> length;
     cout << "What is the width of the create: ";
@@ -23,9 +25,15 @@ int main()
     cin >> height;
 
     volume = length * width * height;
+    //calculate and display the amounts per cubic foot
+    cost = COST_PER_CUBIC_FOOT * volume; 
+    charge = CHARGE_PER_CUBIC_FOOT * volume;
+    profit = charge - cost;
     
-    COST_PER_CUBIC_FOOT = COST_PER_CUBIC_FOOT * volume; 
-    CHARGE_PER_CUBIC_FOOT = CHARGE_PER_CUBIC_FOOT * volume;
+    cout << "Volume of the crate: " << volume << " cubic feet" << endl;
+    cout << "Cost of the crate: $" << cost << endl;
+    cout << "Charge of the crate: $" << charge << endl;
+    cout << "Profit of the crate: $" << profit << endl;
 
-
+    return 0;
 }
