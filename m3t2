@@ -1,0 +1,36 @@
+/*
+CSC-134
+M3T2
+Mendez
+3/05/2026
+*/
+
+#include <iostream>
+#include <cmath>
+#include <ctime>
+using namespace std;
+
+int main()
+{
+    const int dice = 6;
+    int seed = time(0);
+    cout << "Your seed is: " << seed << endl;
+    cout << "What's your lucky number? ";
+    cin >> seed;
+    srand(seed);
+
+    const int MAX = 6;
+    int roll_1, roll_2, total;
+
+    roll_1 = (rand() % MAX) +1;
+    cout << "Your roll was: " << roll_1 << end;
+
+    roll_2 = (rand() % MAX) +1;
+    cout << "Your roll was: " << roll_2 << end;
+
+    total = roll_1 + roll_2;
+    cout << "Total roll is: " << total << endl;
+
+
+    return 0;
+}
