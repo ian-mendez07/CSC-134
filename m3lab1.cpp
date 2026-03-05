@@ -6,20 +6,20 @@ Mendez
 */
 
 #include <iostream>
-using namescpace std;
+using namespace std;
 
 int main()
 {
     int choices;
     
     cout << "Get Taco Bell after the club?" << endl;
-    cout << "Type HECK YES or ew no thx: ";
+    cout << "Type 1 for HECK YES or 2 for ew no thx: ";
     cin >> choices;
 
-    if ("HECK YES" == choices) {
+    if (1 == choices) {
         cout << "Get ready lets go!" << endl;
     }
-    else if ("ew no thx" == choices) {
+    else if (2 == choices) {
         cout << "Fine, I'll go by myself" << endl;
     }
     else {
