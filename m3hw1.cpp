@@ -1,5 +1,5 @@
 // CSC 134
-// M3HW1 - Gold
+// M3HW1 - Bronze
 // Jeovannie Mendez
 // 03/09/2026
 
@@ -70,12 +70,5 @@ int main(){
     cout << "Tax: \t\t\t$" << tax_amount << endl;
     cout << "Total: \t\t\t$" << total_price << endl;
     // end of question 2
-
-    // Question 
-    cout << endl;
-    cout << "Question 3" << endl;
-
-    // end of question 3
-
     return 0;
 }
