@@ -10,14 +10,13 @@ using namespace std;
 
 int main() {
 
-    int firstNum, secNum, answer;
-    firstNum = 5;
-    //secNum = 1;
-   // answer = firstNum * secNum;
+    int firstNum, answer;
+    cout << "Enter a number from 1 to 12? " << endl;
+    cin >> firstNum;
 
-    for (int i=1; i <= 5; i++) {
+    for (int i=1; i <= 12; i++) {
         answer = firstNum * i;
         cout << firstNum << " times " << i << " is " << answer << endl;
-
+        }
+    return 0;
     }
-}
