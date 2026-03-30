@@ -15,9 +15,10 @@ one value returning function
 
 void say_hello();
 int give_the_answer();
-int double_a_number();
+int double_a_number(int num);
 
 //Function defintions
+//each function goes down to run that function then back up to main
 int main(){
     cout << "Hello from main()" << endl;
     say_hello();
