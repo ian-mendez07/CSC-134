@@ -16,6 +16,8 @@ void printResult(int first, int second){
 int square(int number){
     int result;
 
+    return result;
+}
 
 int main(){
     int count = 1;
