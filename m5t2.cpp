@@ -12,6 +12,9 @@ void printResult(int first, int second){
     cout << first << " ^2 = " << second << endl;
 }
 
+//given a number, return the square of it
+int square(int number){
+    int result;
 
 
 int main(){
