@@ -12,6 +12,8 @@ void printResult(int first, int second){
     cout << first << " ^2 = " << second << endl;
 }
 
+
+
 int main(){
     int count = 1;
     int result;
