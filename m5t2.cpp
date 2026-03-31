@@ -15,17 +15,16 @@ void printResult(int first, int second){
 //given a number, return the square of it
 int square(int number){
     int result;
-
+    result = number * number;
     return result;
 }
 
 int main(){
     int count = 1;
     int result;
-
+    //this version will be squares
     while (count <= 10){
-        result = count * count;
-        //cout << count << " ^2 = " << result << endl;
+        result = square(count);
         printResult(count, result);
         count++;
     }
