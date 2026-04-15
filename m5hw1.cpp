@@ -56,7 +56,7 @@ int main(){
 
 
 void question_1() {
-    int rain_1, rain_2, rain_3; 
+    double rain_1, rain_2, rain_3; 
     string month_1, month_2, month_3;
     cout << "Enter month: ";
     cin >> month_1;
@@ -71,7 +71,7 @@ void question_1() {
     cout << "Enter rainfall for " << month_3 <<": ";
     cin >> rain_3;
     
-    int rain_avg = (rain_1 + rain_2 + rain_3) / 3;
+    double rain_avg = (rain_1 + rain_2 + rain_3) / 3;
     cout << setprecision(2) << fixed;
     cout << "The average rainfall for "<< month_1 <<", "<< month_2 << " and " << month_3 << " is " << rain_avg << endl;
 }
@@ -96,7 +96,7 @@ void question_2(){
 void question_3(){
     int number;
     cout << "Enter a number (1 - 10): ";
-    cin << number;
+    cin >> number;
     if (number < 1 || number > 10){
         cout << "Redo pls"<< endl;
     }
@@ -166,7 +166,7 @@ void question_4(){
         }
     }
     else if (area_choice == 3){
-        double base, height
+        double base, height;
         cout << "What is base: ";
         cin >> base;
         cout << "What is height: ";
@@ -197,4 +197,17 @@ void question_5(){
     cout << "How many hours has it traveled? ";
     cin >> time;
 
+    if (speed < 0 || time < 1){
+        cout << "Speed needs to be more than 0 and atleast 1 hour" << endl;
+    }
+    else{
+        cout << "Hour\t" << "Distance Traveled"<< endl;
+        cout << "__________________________" << endl;
+        int hour = 1;
+        while (hour <= time){
+            double distance = speed * hour;
+            cout << hour << "\t\t" << distance << endl;
+            hour++;
+        }
+    }
 }
